@@ -1,6 +1,78 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@layer base {
+body{
+  overflow-x: hidden;
+}
 
+#navbar-location{
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+#CardFt{
+  height: 40px;
+  width: 40px;
+
+}
+
+#li-d{
+  font-size: 15px;
+}
+
+#card-group{
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+@media (max-width: 855px) {
+  #card-group{
+      text-align: center;
+  }
+}
+
+#marcas{
+  border-top: 11px solid #c7dce2 ;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+@media (max-width: 1450px) {
+  #marcas,#card-group, #navbar-location{
+      padding-left: 100px;
+      padding-right: 100px;
+  }
+}
+
+@media (max-width: 1210px) {
+  #marcas,#card-group, #navbar-location{
+      padding-left: 25px;
+      padding-right: 25px;
+  }
+}
+
+@media (max-width: 1060px) {
+  #marcas{
+      text-align: center;
+  }
+}
+
+.footerD{
+  background-color: #272e32;
+  padding: 30px;
+}
+
+.imagproducto{
+  height: 80%;
+  width: 80%;
+}
+
+.f-text{
+  display: inline; 
+  color: #ffffff;
+}
+
+@media (max-width: 840px) {
+  #footer-e{
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+  }
 }

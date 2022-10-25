@@ -4,20 +4,17 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Home from './pages/home';
-import Detalle from './pages/detalle';
-import Estadisticas from './pages/estadisticas';
-import Form from './pages/form';
-
+import Home from './pages/Home';
+import Detalle from './pages/Detalle';
+import Productos from './pages/Productos';
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>                  
+      <Routes>     
           <Route path='/' element={<Home />} />
-          <Route path='/detalle/:id' element={<Detalle />} />
-          <Route path='/estadisticas' element={<Estadisticas />} />
-          <Route path='/form' element={<Form />} />
+          <Route path='/Detalle/:id' element={<Detalle />} />
+          <Route path='/Productos' element={<Productos />} />
       </Routes>
     </BrowserRouter>
   );
