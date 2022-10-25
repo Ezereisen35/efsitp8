@@ -15,15 +15,15 @@ function Footer(){
                 <img src={BYN}/>
             </div>
             <div className="col" id="footer-e">
-                <img src={Location}/>
-                <h6 className="f-text">Beiro 3300 - Villa del Parque</h6>
+                <img src={Location} className="m-3"/>
+                <h6 className="f-text m-3">Beiro 3300 - Villa del Parque</h6>
                 <br></br>
-                <img src={Mail}/>
-                <h6 className="f-text">contacto@sanitarioscampana.com.ar</h6>
+                <img src={Mail} className="m-3"/>
+                <h6 className="f-text m-3">contacto@sanitarioscampana.com.ar</h6>
             </div>
             <div className="col d-flex align-items-center" id="footer-e">
-                <div className="pr-5"><img src={Tel} /></div> 
-                <div><h5 className="f-text">4503-6015</h5></div>
+                <div className="pr-5 m-3"><img src={Tel} /></div> 
+                <div><h5 className="f-text m-1" >4503-6015</h5></div>
             </div>
         </div>
     </footer>

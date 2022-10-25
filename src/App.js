@@ -4,9 +4,9 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Home from './pages/Home';
-import Detalle from './pages/Detalle';
-import Productos from './pages/Productos';
+import Home from './screens/Home';
+import Detalle from './screens/Detalle';
+import Productos from './screens/Productos';
 
 function App() {
   return (
