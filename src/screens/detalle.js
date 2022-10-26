@@ -1,17 +1,34 @@
-import { getActiveElement } from '@testing-library/user-event/dist/utils';
-import React from 'react'
+import React, {useState, useEffect} from "react";
 import { useParams } from 'react-router-dom';
-import Personas from '../Personas';
+import axios, * as others from 'axios';
 
-export default function Detalle() {
-  const { id } = useParams();
-  let personaSeleccionada = Personas.find(Persona => Persona.id === id)
-  
-  return (
-    <>
-      <p>{personaSeleccionada.nombre} {personaSeleccionada.apellido}</p>
-      <p>Edad: {personaSeleccionada.edad} años</p>
-      <p>Email: {personaSeleccionada.email}</p>
-    </>
-  )
+export default function Detalle(Product) {
+  const {id} = useParams()
+  const [query, setQuery] = useState([])
+  useEffect(()=>{
+    axios.get(`https://dummyjson.com/products/${id}`)
+    .then(function (response) {
+      console.log(response.data)
+      setQuery(response.data);
+    })
+    .catch(function (error) {
+        console.log(error)
+    })
+  },[])
+
+  if (query.length === 0) return 
+
+    return (
+      <>
+      <div class="container text-center">
+        
+      <p className="mt-3">{query.title}</p>
+      <img src={query.images[0]} className="mt-3"/>
+      <p className="text-xl m-3">{query.description}</p>
+      <p className="text-xl m-3">Price: ${query.price}</p>
+      
+      </div>
+      
+      </>
+    )
 }

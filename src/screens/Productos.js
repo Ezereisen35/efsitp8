@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import ListaProducts from '../components/ListaProducts';
+import ListaProducts from '../components/ListaProductos';
 
 
 export default function Productos() {

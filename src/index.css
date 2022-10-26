@@ -7,11 +7,6 @@ body{
   padding-left: 200px;
 }
 
-#CardFt{
-  height: 40px;
-  width: 40px;
-
-}
 
 #li-d{
   font-size: 15px;
@@ -34,8 +29,7 @@ body{
   padding-left: 200px;
 }
 
-@media (max-width: 1450px) {
-  #marcas,#card-group, #navbar-location{
+@media (max-width: 1450px) {#marcas,#card-group, #navbar-location{
       padding-left: 100px;
       padding-right: 100px;
   }
@@ -48,31 +42,26 @@ body{
   }
 }
 
-@media (max-width: 1060px) {
-  #marcas{
-      text-align: center;
-  }
-}
+.imagmarca{height: 70%; width: 70%;}
 
-.footerD{
-  background-color: #272e32;
-  padding: 30px;
-}
+.footerfondo{background-color: #272e32;padding: 30px;}
+
+.footermarcas{padding: 30px;}
 
 .imagproducto{
   height: 80%;
   width: 80%;
 }
 
+#borde{border: 2px solid #000000;}
+
 .f-text{
   display: inline; 
   color: #ffffff;
 }
 
+#textomarca{margin-left: 7%;}
+
 @media (max-width: 840px) {
-  #footer-e{
-      align-items: center;
-      padding: 20px;
-      text-align: center;
-  }
+  #footeri{align-items: center;text-align: center;}
 }
