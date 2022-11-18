@@ -3,15 +3,15 @@ import { useNavigate } from "react-router-dom";
 import axios, * as others from 'axios';
 
 
-export default function Home() {
+export default function Home(props) {
   const [query, setQuery] = useState([])
   let navigate = useNavigate();
 
-  const getFirstTwelve = () =>{
+  const getFirstSix = () =>{
     axios.get(`https://dummyjson.com/products`)
     .then(function (response) {
       console.log(response.data.products)
-      setQuery(response.data.products.filter(product => product.id));
+      setQuery(response.data.products.filter(product => product.id<=props.limite));
       console.log(response.data.products)
     })
     .catch(function (error) {
@@ -19,7 +19,7 @@ export default function Home() {
     })
   }
   useEffect(()=>{
-    getFirstTwelve()
+    getFirstSix()
   },[])
 
 

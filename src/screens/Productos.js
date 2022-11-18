@@ -5,7 +5,7 @@ import ListaProducts from '../components/ListaProductos';
 export default function Productos() {
   return (
     <div>
-      <ListaProducts/>
+      <ListaProducts limite={1000}/>
     </div>
   )
 }

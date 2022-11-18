@@ -16,7 +16,15 @@ function Navbar(){
                     <li className="nav-item">
                         <a className="nav-link active" href="/productos">PRODUCTOS</a>
                     </li>
-                   
+                    <li className="nav-item">
+                        <a className="nav-link active" href="/quienesSomos">QUIENES SOMOS</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link active" href="/contacto">CONTACTO</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link active" href="/carrito">CARRITO</a>
+                    </li>
                 </ul>
             </div>
         </div>
