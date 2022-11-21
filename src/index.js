@@ -4,14 +4,18 @@ import './index.css';
 import App from './App';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import {ContextProvider } from "./contextState"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Navbar />
+    <ContextProvider>
+    
     <App />
     <Footer />
+    </ContextProvider>
   </React.StrictMode>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function

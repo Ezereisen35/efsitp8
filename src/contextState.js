@@ -5,8 +5,8 @@ export const initialState = {
 }
 
 export const ActionTypes = {
-    AñadirAlCarrito: "AÑADIR_AL_CARRITO",
-    QuitarDelCarrito: "QUITAR_DEL_CARRITO"
+    AñadirAlCarrito: "AÑADIR AL CARRITO",
+    QuitarDelCarrito: "QUITAR DEL CARRITO"
 }
 
 export const reducer = (state = {}, action) => {

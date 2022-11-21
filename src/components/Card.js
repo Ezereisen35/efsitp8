@@ -6,10 +6,14 @@ export default function Card(props) {
     let navigate = useNavigate();
     return (
         <>
-            <div key={props.id} onClick={() => navigate(`/Detalle/${props.id}`)}>
-                <p>{props.title}</p>
-                <img src={props.images[0]}/>
+            <div  class="col-3 m-5 pb-3 pt-3" id="borde">
+            <div key={props.id} onClick={() => navigate(`/DetalleProducto/${props.id}`)}>
+                <p className="text-xl">{props.title}</p>
+                <img className="imagproducto" src={props.images[0]}/>
+            </div>
             </div>
         </>
     )
 }
+
+
