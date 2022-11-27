@@ -10,11 +10,18 @@ import Productos from './screens/Productos';
 import QuienesSomos from './screens/quienesSomos';
 import Contacto from './screens/contacto';
 import Carrito from './screens/carrito';
-
+import ReactDOM from 'react-dom/client';
+import './index.css';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import {ContextProvider } from "./contextState";
 
 function App() {
-  return (
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <ContextProvider>
     <BrowserRouter>
     <Navbar />
       <Routes>     
@@ -26,7 +33,15 @@ function App() {
           <Route path='/carrito' element={<Carrito />} />
       </Routes>
     </BrowserRouter>
-  );
+    
+    <Footer />
+    </ContextProvider>
+  </React.StrictMode>
+  
+);
+
+
+
 }
 
 export default App;

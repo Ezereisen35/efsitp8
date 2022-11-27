@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
-
+import { ProductoShape } from "../ProductShape";
 
 export default function Card(props) {
     let navigate = useNavigate();
@@ -17,3 +17,6 @@ export default function Card(props) {
 }
 
 
+Card.propTypes = {
+    query: ProductoShape.isRequired
+  }
